@@ -1,0 +1,252 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/prata/v13/6xKhdSpbNNCT-sWPCm4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Pragati Narrow';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/pragatinarrow/v7/vm8vdRf0T0bS1ffgsPB7WZ-mD274wNI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Shippori Mincho';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/shipporimincho/v1/VdGGAZweH5EbgHY6YExcZfDoj0BA3peS7qtgjp7PoXk4LwzLxlAlXE-_3UM.119.woff2) format('woff2');
+    unicode-range: U+20, U+2027, U+3001-3002, U+3041-307f, U+3081-308f, U+3091-3093, U+3099-309a, U+309d-309e, U+30a1-30e1, U+30e3-30ed, U+30ef-30f0, U+30f2-30f4, U+30fb-30fe, U+ff0c, U+ff0e;
+  }
+
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* Global styles */
+
+body { 
+    background-color: black;
+    color: white;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+h1 {
+    color: white;
+    font-family:"Pragati Narrow", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+p {
+    color:white;
+    font-family:'Playfair Display', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif 
+}
+
+/* Class selectors */
+
+.centerfit {
+    z-index: 0; 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    
+}
+
+.eyes { 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    animation: fadeInAnimation ease 15s;
+    min-height: 100%;
+    min-width: 100%;
+} 
+
+.gamelink { /*General style for game links, not game over/title page/back to map links */
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    font-family: "Prata", "Garamond", serif;
+    position: absolute;
+    top: 86%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.leftlink { /*Navigation/gameplay link; left side of screen. */
+  top: 50%;
+  left: 50%;
+}
+
+.rightlink { /* Navigation/gameplay link; right side of screen. */
+    top: 60%;
+    left: 50%;
+}
+
+
+.gameoverlink { /* When you hit a final page; back to title page. */
+    color:white;
+    text-decoration: none;
+}
+
+.linkhome { /* Link to bring player back to the map */
+    top: 85%;  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.linktitle { /* To link back to title page, not game over styling. Currently only on house entry page. */
+    top: 75%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+.mapimage { 
+    width: 80px;
+    height: 80px;
+  /*  transition-property: width, height;
+    transition-duration: 2s; */
+    z-index: 1;
+}
+
+/* .mapimage:hover { 
+    width: 85px;
+    height: 85px;
+    z-index: 1;
+
+} */
+
+/*Fade in code below - testing */
+.fadein {
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+.fadein:hover {
+    opacity: 1;
+}
+
+/* End fade in code */
+
+ 
+
+.neighborhoodtitle { /*This is the titles on the neighborhood locations. Technically defunct for now.*/
+    top: 10%;
+}
+
+.streetimage { /* Map graphics, does not travel, does not transform */
+    max-width: 80px;
+    max-height: 80px;
+    z-index: 1;
+}
+
+
+/* ID Selectors */
+
+
+
+#gameframe {
+    top: 50%;
+}
+
+#titleright {
+    left: 75%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+#titleleft {
+    left: 25%;
+    text-align: right;
+}
+
+#pookaoutline {
+    max-width: 70%;
+    max-height: 70%;
+    top: 50%;
+    z-index: 0;
+}
+
+#title {
+    top: 13%;
+    z-index: 1;
+}
+
+#titleimage {
+    top: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    z-index: 2
+}
+
+#titleline {
+    position: absolute;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    left: 50%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#goodnight {
+    top: 92%;
+    display: block;
+    left: 50%
+}
+
+#mobilewarning {
+    font-size: 8px;
+    color: black;
+}
+
+#neighborhoodtitle { /* This is the title on the actual map */
+    max-width: 60%;
+    top: 10%;
+    z-index: 2;
+}
+
+#neighborhoodmap {
+    top: 59%;
+    max-width: 60%;
+    z-index: 1;
+}
+
+#pretitlepage {
+    background-color: white;
+}
+
+#stupidchicken {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+
