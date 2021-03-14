@@ -1,0 +1,7 @@
+    <!-- Links for navigation and map -->
+    <a class = "gamelink leftlink"  href="KA_001.html">Karamell and Atlas Choice 1</a>
+    <br>
+    <a class = "gamelink rightlink"  href="KA_002.html">Karamell and Atlas Choice 2</a>
+    <br>
+    <a class = "centerfit linkhome" href="./theneighborhood.html"><em>Back to the map, little one.</em></a>
+<!-- End of links for navigation and map-->
