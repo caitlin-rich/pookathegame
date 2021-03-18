@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "pooka_demo",
+			"path": "..\\..\\Projects (Coding)\\pooka_demo"
+		},
+		{
+			"name": "pookathegame",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
